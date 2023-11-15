@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic Operations</title>
+</head>
+
+<body>
+    <script>
+
+        function performArithmeticOperations() {
+
+            var firstNumber = parseFloat(prompt("Enter the first number:"));
+
+            var secondNumber = parseFloat(prompt("Enter the second number:"));
+
+            if (!isNaN(firstNumber) && !isNaN(secondNumber)) {
+
+                var multiplicationResult = firstNumber * secondNumber;
+                var additionResult = firstNumber + secondNumber;
+                var divisionResult = firstNumber / secondNumber;
+                var subtractionResult = firstNumber - secondNumber;
+                var incrementResult = ++firstNumber;
+                var decrementResult = --secondNumber;
+
+                alert("Multiplication Result: " + multiplicationResult);
+                alert("Addition Result: " + additionResult);
+                alert("Division Result: " + divisionResult);
+                alert("Subtraction Result: " + subtractionResult);
+                alert("Increment Result: " + incrementResult);
+                alert("Decrement Result: " + decrementResult);
+            } else {
+                alert("Invalid input. Please enter valid numbers.");
+            }
+        }
+
+        // Call the function
+        performArithmeticOperations();
+    </script>
+</body>
+
+</html>

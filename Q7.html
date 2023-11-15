@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Checker</title>
+</head>
+
+<body>
+    <script>
+
+        function checkAge() {
+
+            var age = parseInt(prompt("Enter your age:"));
+
+            if (!isNaN(age)) {
+
+                if (age < 18) {
+                    alert("You are not eligible to work.");
+                } else if (age >= 18 && age < 50) {
+                    alert("You are eligible to work.");
+                } else {
+                    alert("You are too old as per the company policy.");
+                }
+            } else {
+                alert("Invalid input. Please enter a valid age.");
+            }
+        }
+
+        checkAge();
+    </script>
+</body>
+
+</html>

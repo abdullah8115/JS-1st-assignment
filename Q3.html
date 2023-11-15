@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Largest Number Checker</title>
+</head>
+
+<body>
+    <script>
+
+        function compareThreeNumbers() {
+
+            var firstNumber = parseFloat(prompt("Enter the first number:"));
+
+            var secondNumber = parseFloat(prompt("Enter the second number:"));
+
+            var thirdNumber = parseFloat(prompt("Enter the third number:"));
+
+
+            if (!isNaN(firstNumber) && !isNaN(secondNumber) && !isNaN(thirdNumber)) {
+
+                var largestNumber = Math.max(firstNumber, secondNumber, thirdNumber);
+                var smallestNumber = Math.min(firstNumber, secondNumber, thirdNumber);
+
+                alert("Is the first number largest than the second and third numbers? " + (firstNumber > secondNumber && firstNumber > thirdNumber));
+                alert("Is the first number smallest than the second and third numbers? " + (firstNumber < secondNumber && firstNumber < thirdNumber));
+                alert("Are the first, second, and third numbers equal? " + (firstNumber === secondNumber && firstNumber === thirdNumber));
+            } else {
+                alert("Invalid input. Please enter valid numbers.");
+            }
+        }
+
+        compareThreeNumbers();
+    </script>
+</body>
+
+</html>

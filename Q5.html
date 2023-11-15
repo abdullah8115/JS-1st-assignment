@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculator</title>
+</head>
+
+<body>
+    <script>
+
+        function calculateGrade() {
+
+            var percentage = parseFloat(prompt("Enter the percentage of your marks (between 1 and 100):"));
+
+            if (!isNaN(percentage) && percentage >= 0 && percentage <= 100) {
+
+                if (percentage >= 90 && percentage <= 100) {
+                    alert("S grade");
+                } else if (percentage >= 80 && percentage < 90) {
+                    alert("A grade");
+                } else if (percentage >= 70 && percentage < 80) {
+                    alert("B grade");
+                } else if (percentage >= 60 && percentage < 70) {
+                    alert("C grade");
+                } else if (percentage >= 50 && percentage < 60) {
+                    alert("D grade");
+                } else if (percentage >= 40 && percentage < 50) {
+                    alert("E grade");
+                } else {
+                    alert("Student has failed");
+                }
+            } else {
+                alert("Invalid marks. Please enter a valid percentage between 1 and 100.");
+            }
+        }
+
+        calculateGrade();
+    </script>
+</body>
+
+</html>

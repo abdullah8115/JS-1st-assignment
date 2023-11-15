@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Largest Number Checker</title>
+</head>
+
+<body>
+    <script>
+
+        function compareNumbers() {
+
+            var firstNumber = parseFloat(prompt("Enter the first number:"));
+
+            var secondNumber = parseFloat(prompt("Enter the second number:"));
+
+            if (!isNaN(firstNumber) && !isNaN(secondNumber)) {
+
+                var largestNumber = Math.max(firstNumber, secondNumber);
+                var smallestNumber = Math.min(firstNumber, secondNumber);
+
+                alert("Is the first number largest than the second number? " + (firstNumber > secondNumber));
+                alert("Is the first number smallest than the second number? " + (firstNumber < secondNumber));
+                alert("Are the first and second numbers equal? " + (firstNumber === secondNumber));
+            } else {
+                alert("Invalid input. Please enter valid numbers.");
+            }
+        }
+
+        compareNumbers();
+    </script>
+</body>
+
+</html>
